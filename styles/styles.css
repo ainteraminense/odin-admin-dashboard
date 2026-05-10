@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -21,6 +21,8 @@ body {
 
 ul {
     list-style: none;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
 }
 
 li {
@@ -28,6 +30,15 @@ li {
     grid-template-columns: 1fr 5fr;
     justify-content: start;
     align-items: center;
+    gap: 8px;
+}
+
+ul:first-of-type {
+    grid-template-rows: 1fr;
+}
+
+ul:last-of-type {
+    grid-template-rows: repeat(3, 1fr);
 }
 
 a {
