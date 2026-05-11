@@ -26,12 +26,13 @@ ul {
     align-items: start;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+    padding: 0 16px;
 }
 
 li {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    justify-content: start;
+    justify-self: start;
     align-items: center;
     gap: 8px;
 }
@@ -128,6 +129,7 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit,     minmax(300px, 1fr));
     gap: 16px;
+    align-content: end;
 }
 
 .main-content {
@@ -150,11 +152,6 @@ button {
 .announcements-column h5,
 .announcements-column p {
     margin: 0;
-}
-
-.trending {
-    grid-row: 2;
-    grid-column: 2;
 }
 
 .card {
@@ -185,3 +182,19 @@ hr {
 p {
     color: #525252
 }
+
+.trending-cards {
+    grid-row: 2;
+    grid-column: 2;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 2px #4a4a4a45;
+}
+
+.trending-individual {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    padding: 16px 8px;
+}
+
