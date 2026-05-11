@@ -72,7 +72,7 @@ a {
     grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 0 16px;
+    padding: 0 32px;
 }
 
 .header-row {
@@ -93,6 +93,10 @@ a {
     justify-content: end;
 }
 
+.end:last-of-type {
+    display: flex;
+}
+
 .header-row *{
     float: left;
     align-self: center;
@@ -103,4 +107,13 @@ a {
     margin: 0;
 }
 
+button {
+    padding: 8px 24px;
+    color: #FFF;
+    background: #1888f0;
+    border: none;
+    border-radius: 20px;
+    flex: 1;
+    max-width: 120px;
+}
 
